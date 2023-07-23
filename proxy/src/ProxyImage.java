@@ -9,7 +9,7 @@ public class ProxyImage implements ImageSubject {
     @Override
     public void display() {
         if (realImage == null) {
-
+            realImage = new RealImage(fileName);
         }
         realImage.display();
     }
